@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AUDIO PLAYER</title>
+	
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+	<link rel="stylesheet" type="text/css" href="audio-player-css.css">
+</head>
+<body>
+	<div id="bg">
+		<div id="blackLayer"></div>
+	</div>
+
+	<div id="main">
+		<div id="image">
+			<img src="latest-release-1.jpg">
+		</div>
+
+		<div id="player">
+			<div id="songTitle">Yaad Piya Ki</div>
+			<div id="buttons">
+				<i id="back" class="fa fa-step-backward" onclick = "prev(this)" aria-hidden="true"></i>
+				<i id="play" class="fa fa-play-circle" onclick="play(this)" aria-hidden="true"></i>
+				<i id="forward" class="fa fa-step-forward" onclick="next(this)" aria-hidden="true"></i>
+			</div>
+			<div id="seek-bar">
+				<div id="fill"></div>
+				<div id="handle"></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="audio-player-js.js"></script>
+</body>
+</html>
