@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Player</title>
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="Major-Project1.css">
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="icons8-music-record-96.png">
+			<h5>Ninja Studio</h5>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#">Favourites</a></li>
+	    		<li>
+	    			<form>
+	    				<input name="search" type="text" placeholder="Search">
+	    			</form>
+	    		</li>
+	    		<li>
+	    			<a href="#"><i class="fa fa-bell font-icons" aria-hidden="true"></i></a>
+	    		</li>
+	    		<li>
+	    			<a href="#">Login</a>
+	    		</li>
+	    		<li>
+	    			<a href="#">SignUp</a>
+	    		</li>
+			</ul>
+		</nav>
+		<div class="menu-toggle">
+			<i id="ham-burger" class="fa fa-bars font-icons" aria-hidden="true"></i>
+		</div>
+	</header>
+	<main>
+		<content>
+			<section id="slider">
+				<img id="img-1" class="slider-img" src="slider2.jpg">
+				<img id="img-2" class="slider-img" src="slider1.jpg">
+				<img id="img-3" class="slider-img" src="slider3.jpg">
+			</section>
+
+
+			<section id="latest-releases-container">
+				<p class="text">Latest Release</p>
+				<div id="latest-releases">
+					<div class="latest-releases-songs">
+						<a id="play-song-yaad-piya-ki"  data-playSong="Yaad Piya Ki Aane Lagi - Neha Kakkar.mp3" data-imgSrc="latest-release-1.jpg" data-songName="Yaad Piya Ki" href="audio-player.html" onclick="storeData(this);" ><div id="yaad-piya-ki-div" class="img-container"><img id="yaad-piya-ki-img" src="latest-release-1.jpg">
+						<i class="fa fa-play play-btn"  aria-hidden="true"></i>
+					</div></a>
+						<pre class="sub-text title">Yaad Piya Ki
+<span>DEC 12,2019</span></pre>
+                        <pre class="time"><i class="fa fa-ellipsis-h  font-icons" aria-hidden="true"></i>
+4:04</pre>
+					</div>
+					<div class="latest-releases-songs">
+						<a  id="play-song-dheeme-dheeme" class="playSong" data-playSong="Dheeme Dheeme - Tony Kakkar.mp3" data-imgSrc="latest-release-2.jpeg" data-songName="Dheeme Dheeme" href="audio-player.html" onclick="storeData(this);"><div class="img-container"><img src="latest-release-2.jpeg">
+						<i class="fa fa-play play-btn" aria-hidden="true"></i></div></a>
+						<pre class="sub-text title">Dheeme Dheeme
+<span>DEC 12,2019</span></pre>
+                        <pre class="time"><i class="fa fa-ellipsis-h  font-icons" aria-hidden="true"></i>
+4:04</pre>
+					</div>
+					<div class="latest-releases-songs">
+						<a  id="play-song-tu-bhi-royega" class="playSong" data-playSong="Tu Bhi Royega - Jyotica Tangri.mp3" data-imgSrc="latest-release-3.jpg" data-songName="Tu Bhi Royega" href="audio-player.html" onclick="storeData(this);"><div class="img-container"><img src="latest-release-3.jpg">
+						<i class="fa fa-play play-btn" aria-hidden="true"></i></div></a>
+						<pre class="sub-text title">Tu Bhi Royega
+<span>DEC 12,2019</span></pre>
+                        <pre class="time"><i class="fa fa-ellipsis-h  font-icons" aria-hidden="true"></i>
+4:04</pre>
+					</div>
+					<div class="latest-releases-songs">
+						<a  id="play-song-ole-ole" class="playSong" data-playSong="Ole Ole 2 - Jawaani Jaaneman.mp3" data-imgSrc="latest-release-4.jpg" data-songName="Ole Ole" href="audio-player.html" onclick="storeData(this);"><div class="img-container"><img src="latest-release-4.jpg">
+						<i class="fa fa-play play-btn" aria-hidden="true"></i></div></a>
+						<pre class="sub-text title">Ole Ole
+<span>DEC 12,2019</span></pre>
+                        <pre class="time"><i class="fa fa-ellipsis-h  font-icons" aria-hidden="true"></i>
+4:04</pre>
+					</div>
+				</div>
+			</section>
+
+			<section id="popular-artists-container">
+
+				<p class="text">Popular Artists</p>
+				<div id="popular-artists">
+					<div class="singers">
+						<div class="rounded-img-container">
+							<a href="2nd-page.html"><img class="rounded-img img-hover-play" src="popular-singers-1.jpg"></a>
+						<i class="fa fa-play play-btn" aria-hidden="true"></i>
+						</div>
+						<p class="sub-text">Neha Kakkar</p>
+					</div>
+					<div class="singers">
+						<div class="rounded-img-container">
+							<a href="arijit-singh.html"><img class="rounded-img img-hover-play" src="popular-singers-2.png"></a>
+						<i class="fa fa-play play-btn" aria-hidden="true"></i></div>
+						<p class="sub-text">Arijit Singh</p>
+					</div>
+					<div class="singers">
+						<div class="rounded-img-container">
+							<a href="sanam-puri.html"><img class="rounded-img img-hover-play" src="popular-singers-3.jpg"></a>
+						<i class="fa fa-play play-btn" aria-hidden="true"></i></div>
+						<p class="sub-text">Sanam Puri</p>
+					</div>
+					<div class="singers">
+						<div class="rounded-img-container">
+							<a href="shirley.html"><img class="rounded-img img-hover-play" src="popular-singers-4.jpg"></a>
+						<i class="fa fa-play play-btn" aria-hidden="true"></i></div>
+						<p class="sub-text">Shirley Sieta</p>
+					</div>
+					<div class="singers">
+						<div class="rounded-img-container"><img class="rounded-img img-hover-play" src="popular-singers-5.jpg">
+						<i class="fa fa-play play-btn" aria-hidden="true"></i></div>
+						<p class="sub-text">Dhvani</p>
+					</div>
+					<div class="singers">
+						<div class="rounded-img-container"><img class="rounded-img img-hover-play" src="popular-singers-6.jpg">
+						<i class="fa fa-play play-btn" aria-hidden="true"></i></div>
+						<p class="sub-text">Armaan Malik</p>
+					</div>
+					</div>
+				</section>
+
+				<section class="music" id="stations-1">
+					<img id="station" src="stations.jpg">
+					<div class="child-music" id="inner-station">
+						<div id="music-1" class="music-stations">
+						<p class="sub-text">Love</p>
+					</div>
+					<div id="music-2" class="music-stations">
+						<p class="sub-text">Retro</p>
+					</div>
+					<div id="music-3" class="music-stations">
+						<p class="sub-text">Chill</p>
+					</div>
+					<div id="music-4" class="music-stations">
+						<p class="sub-text">Workout</p>
+					</div>
+					<div id="music-5" class="music-stations">
+						<p class="sub-text">Rock</p>
+					</div>
+					<div id="music-6" class="music-stations">
+						<p class="sub-text">Pop</p>
+					</div>
+					</div>
+				</section>
+
+				<section class="music-2" id="stations-2">
+					<div class="parent"><div id="music-7" class="child-stations">
+						<p class="type sub-text">Party</p>
+					</div>
+				</div>
+					<div class="parent"><div id="music-8" class="child-stations">
+					    <p class=" type sub-text">Electronics</p>
+				    </div>
+				</div>
+					<div class="parent"><div id="music-9" class="child-stations">
+						<p class="type sub-text">Road Trip</p>
+					</div>
+				</div>
+				</section>
+
+				<section id="latest-hindi-container">
+					<p class="text">Latest Hindi</p>
+					<div id="latest-hindi-inner">
+					<div class="latest-hindi">
+						<a id="play-song-sanam-re" class="playSong" data-playSong="sanam-re.mp3" data-imgSrc="sanam-re.jpg" data-songName="Sanam Re" href="audio-player.html" onclick="storeData(this);"><div class="latest-hindi-hover"><img src="sanam-re.jpg">
+						<i class="fa fa-play play-btn" aria-hidden="true"></i>
+					</div></a>
+						<p class="sub-text title">DEC 12,2019</p>
+						<span class="sub-text title">Sanam Re</span>
+					</div>
+					<div class="latest-hindi">
+						<a id="play-song-yaad-piya-ki" href="audio-player.html" data-playSong="Yaad Piya Ki Aane Lagi - Neha Kakkar.mp3" data-imgSrc="latest-release-1.jpg" data-songName="Yaad Piya Ki" onclick="storeData(this);"><div class="latest-hindi-hover"><img src="yaad-piya-ki.jpg">
+						<i class="fa fa-play play-btn" aria-hidden="true"></i>
+					</div></a>
+						<p class="sub-text title">Yaad Piya Ki</p>
+						<span class="sub-text title">DEC 12,2019</span>
+					</div>
+					<div class="latest-hindi">
+						<a id="play-song-apna-time" href="audio-player.html" data-playSong="Apna Time Aayega.mp3" data-imgSrc="gully-boy.jpg" data-songName="Apna Time Ayega" onclick="storeData(this);"><div class="latest-hindi-hover"><img src="gully-boy.jpg"><i class="fa fa-play play-btn" aria-hidden="true"></i>
+						</div></a>
+						<p class="sub-text title">Gully Boy</p>
+						<span class="sub-text title">DEC 12,2019</span>
+					</div>
+					<div class="latest-hindi">
+						<a id="play-song-garmi" href="audio-player.html" data-playSong="Garmi.mp3" data-imgSrc="garmi.jpg" data-songName="Garmi" onclick="storeData(this);"><div class="latest-hindi-hover"><img src="garmi.jpg"><i class="fa fa-play play-btn" aria-hidden="true"></i></div></a>
+						<p class="sub-text title">Haye Garmi</p>
+						<span class="sub-text title">DEC 12,2019</span>
+					</div>
+					<div class="latest-hindi">
+						<a id="play-song-dhadak" href="audio-player.html" data-playSong="dhadak.mp3" data-imgSrc="dhadak.jpg" data-songName="Dhadak" onclick="storeData(this);"><div class="latest-hindi-hover"><img src="dhadak.jpg">
+						<i class="fa fa-play play-btn" aria-hidden="true"></i>
+					</div></a>
+						<p class="sub-text title">Dhadak</p>
+						<span class="sub-text title">DEC 12,2019</span>
+					</div>
+					<div class="latest-hindi">
+						<div class="latest-hindi-hover"><img src="latest-release-2.jpeg"><i class="fa fa-play play-btn" aria-hidden="true"></i>
+						</div>
+						<p class="sub-text title">Dheeme Dheeme</p>
+						<span class="sub-text title">DEC 12,2019</span>
+					</div>
+				</div>
+				</section>
+
+				<section id="latest-hindi-container">
+					<p class="text">Latest Punjabi</p>
+					<div id="latest-hindi-inner">
+					<div class="latest-hindi">
+						<div class="latest-hindi-hover"><img class="img-hover-play" src="kalla-sohna.jpg">
+						<i class="fa fa-play play-btn" aria-hidden="true"></i>
+					</div>
+						<p class="sub-text title">Kalla Sohna</p>
+						<span class="sub-text title">DEC 12,2019</span>
+					</div>
+					<div class="latest-hindi">
+						<div class="latest-hindi-hover"><img class="img-hover-play" src="kya-baat-a.jpg"><i class="fa fa-play play-btn" aria-hidden="true"></i>
+						</div>
+						<p class="sub-text title">Kya Baat Ay</p>
+						<span class="sub-text title">DEC 12,2019</span>
+					</div>
+					<div class="latest-hindi">
+						<div class="latest-hindi-hover"><img class="img-hover-play" src="jattwad.jpg"><i class="fa fa-play play-btn" aria-hidden="true"></i>
+						</div>
+						<p class="sub-text title">Jattwaad</p>
+						<span class="sub-text title">DEC 12,2019</span>
+					</div>
+					<div class="latest-hindi">
+						<div class="latest-hindi-hover"><img class="img-hover-play" src="yaari.jpg"><i class="fa fa-play play-btn" aria-hidden="true"></i>
+						</div>
+						<p class="sub-text title">Yaari</p>
+						<span class="sub-text title">DEC 12,2019</span>
+					</div>
+					<div class="latest-hindi">
+						<div class="latest-hindi-hover"><img class="img-hover-play" src="8-parche.jpg"><i class="fa fa-play play-btn" aria-hidden="true"></i>
+						</div>
+						<p class="sub-text title">8 Parche</p>
+						<span class="sub-text title">DEC 12,2019</span>
+					</div>
+					<div class="latest-hindi">
+						<div class="latest-hindi-hover"><img class="img-hover-play" src="laare.jpg"><i class="fa fa-play play-btn" aria-hidden="true"></i>
+						</div>
+						<p class="sub-text title">Laare</p>
+						<span class="sub-text title">DEC 12,2019</span>
+					</div>
+				</div>
+				</section>
+		</content>
+
+		<aside id="aside">
+			<p class="heading text title">Queue</p>
+
+			<ol id="queue-list">
+				<li>
+					<div class="queue">
+				      <div class="q-img-container">
+					      <img src="laare.jpg">
+					      <i class="fa fa-play play-btn" aria-hidden="true"></i>
+				     </div>
+				     <pre class="sub-text title">Laare
+<span>xxx</span></pre>
+                     <i class="fa fa-heart" aria-hidden="true"></i>
+			        </div>
+				</li>
+
+				<li>
+					<div class="queue">
+				       <div class="q-img-container">
+					      <img src="garmi.jpg">
+					      <i class="fa fa-play play-btn" aria-hidden="true"></i>
+				       </div>
+				    <pre class="sub-text title">Laare
+<span>xxx</span></pre>
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+			       </div>
+				</li>
+
+			<li>
+				<div class="queue">
+				<div class="q-img-container">
+					<img src="yaad-piya-ki.jpg">
+					<i class="fa fa-play play-btn" aria-hidden="true"></i>
+				</div>
+				<pre class="sub-text title">Laare
+<span>xxx</span></pre>
+               <i class="fa fa-heart" aria-hidden="true"></i>
+			</div></li>
+
+			<li>
+			<div class="queue">
+				<div class="q-img-container">
+					<img class="img-hover-play" src="yaari.jpg">
+				<i class="fa fa-play play-btn" aria-hidden="true"></i></div>
+				<pre class="sub-text title">Laare
+<span>xxx</span></pre>
+               <i class="fa fa-heart" aria-hidden="true"></i>
+			</div></li>
+
+			<li>
+			<div class="queue">
+				<div class="q-img-container">
+					<img class="img-hover-play" src="dhadak.jpg">
+				<i class="fa fa-play play-btn" aria-hidden="true"></i></div>
+				<pre class="sub-text title">Laare
+<span>xxx</span></pre>
+               <i class="fa fa-heart" aria-hidden="true"></i>
+			</div></li>
+
+			<li>
+			<div class="queue">
+				<div class="q-img-container">
+					<img class="img-hover-play" src="sanam-re.jpg">
+				<i class="fa fa-play play-btn" aria-hidden="true"></i>
+			</div>
+				<pre class="sub-text title">Laare
+<span>xxx</span></pre>
+               <i class="fa fa-heart" aria-hidden="true"></i>
+			</div></li>
+
+			<li>
+			<div class="queue">
+				<div class="q-img-container">
+					<img class="img-hover-play" src="jattwad.jpg">
+				<i class="fa fa-play play-btn" aria-hidden="true"></i></div>
+				<pre class="sub-text title">Laare
+<span>xxx</span></pre>
+               <i class="fa fa-heart" aria-hidden="true"></i>
+			</div></li>
+
+			<li>
+			<div class="queue">
+				<div class="q-img-container">
+					<img class="img-hover-play" src="gully-boy.jpg">
+				<i class="fa fa-play play-btn" aria-hidden="true"></i></div>
+				<pre class="sub-text title">Laare
+<span>xxx</span></pre>
+               <i class="fa fa-heart" aria-hidden="true"></i>
+			</div></li>
+
+			<li>
+			<div class="queue">
+				<div class="q-img-container">
+					<img class="img-hover-play" src="kya-baat-a.jpg">
+				<i class="fa fa-play play-btn" aria-hidden="true"></i></div>
+				<pre class="sub-text title">Laare
+<span>xxx</span></pre>
+               <i class="fa fa-heart" aria-hidden="true"></i>
+			</div></li>
+
+			<li>
+			<div class="queue">
+				<div class="q-img-container">
+					<img class="img-hover-play" src="kalla-sohna.jpg">
+				<i class="fa fa-play play-btn" aria-hidden="true"></i></div>
+				<pre class="sub-text title">Laare
+<span>xxx</span></pre>
+               <i class="fa fa-heart" aria-hidden="true"></i>
+			</div></li>
+
+			<li>
+			<div class="queue">
+				<div class="q-img-container">
+					<img class="img-hover-play" src="8-parche.jpg">
+				<i class="fa fa-play play-btn" aria-hidden="true"></i></div>
+				<pre class="sub-text title">Laare
+<span>xxx</span></pre>
+               <i class="fa fa-heart" aria-hidden="true"></i>
+			</div></li>
+
+			<li>
+			<div class="queue">
+				<div class="q-img-container">
+					<img class="img-hover-play" src="sanam-re.jpg">
+				<i class="fa fa-play play-btn" aria-hidden="true"></i></div>
+				<pre class="sub-text title">Laare
+<span>xxx</span></pre>
+               <i class="fa fa-heart" aria-hidden="true"></i>
+			</div></li>
+
+			<li>
+			<div class="queue">
+				<div class="q-img-container">
+					<img class="img-hover-play" src="yaad-piya-ki.jpg">
+				<i class="fa fa-play play-btn" aria-hidden="true"></i></div>
+				<pre class="sub-text title">Laare
+<span>xxx</span></pre>
+               <i class="fa fa-heart" aria-hidden="true"></i>
+			</div></li>
+
+			<li>
+			<div class="queue">
+				<div class="q-img-container">
+					<img class="img-hover-play" src="garmi.jpg">
+				<i class="fa fa-play play-btn" aria-hidden="true"></i></div>
+				<pre class="sub-text title">Laare
+<span>xxx</span></pre>
+               <i class="fa fa-heart" aria-hidden="true"></i>
+			</div></li>
+
+			<li>
+			<div class="queue">
+				<div class="q-img-container">
+					<img class="img-hover-play" src="laare.jpg">
+				<i class="fa fa-play play-btn" aria-hidden="true"></i></div>
+				<pre class="sub-text title">Laare
+<span>xxx</span></pre>
+               <i class="fa fa-heart" aria-hidden="true"></i>
+			</div></li>
+
+			<li>
+			<div class="queue">
+				<div class="q-img-container">
+					<img class="img-hover-play" src="yaari.jpg">
+				<i class="fa fa-play play-btn" aria-hidden="true"></i></div>
+				<pre class="sub-text title">Laare
+<span>xxx</span></pre>
+               <i class="fa fa-heart" aria-hidden="true"></i>
+			</div></li>
+
+
+			</ol>
+			
+			
+ 		</aside>
+
+		
+	</main>
+	
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+         <script type="text/javascript">
+  	        $(document).ready(function(){
+  		        $('.menu-toggle').click(function(){
+  			    $('body').toggleClass('active2');
+  			    $('nav').toggleClass('active');
+  		    });
+  	   });
+  </script>
+  
+ 
+<script type="text/javascript" src="store-data.js"></script>
+</body>
+
+</html>
