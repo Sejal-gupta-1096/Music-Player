@@ -18,9 +18,10 @@ mainImage.src=localStorage.getItem('imgSrc');
 var songTitle = document.getElementById("songTitle");
 songTitle.innerHTML = localStorage.getItem('songName');
 
-var latestReleasesArr=["Yaad Piya Ki Aane Lagi - Neha Kakkar.mp3","Dheeme Dheeme - Tony Kakkar.mp3",
-"Tu Bhi Royega - Jyotica Tangri.mp3","Ole Ole 2 - Jawaani Jaaneman.mp3"];
-var latestReleasesImageArr=["latest-release-1.jpg","latest-release-2.jpeg","latest-release-3.jpg","latest-release-4.jpg"];
+var latestReleasesArr=["./assets/songs/Yaad Piya Ki Aane Lagi - Neha Kakkar.mp3","./assets/songs/Dheeme Dheeme - Tony Kakkar.mp3",
+"./assets/songs/Tu Bhi Royega - Jyotica Tangri.mp3","./assets/songs/Ole Ole 2 - Jawaani Jaaneman.mp3"];
+var latestReleasesImageArr=["./assets/images/latest-release-1.jpg","./assets/images/latest-release-2.jpeg",
+"./assets/images/latest-release-3.jpg","./assets/images/latest-release-4.jpg"];
 var latestReleasesTitleArr = ["Yaad Piya Ki Aane Lagi","Dheeme Dheeme","Tu Bhi Royega","Ole Ole"];
 var latestReleasesIndex;
 
@@ -29,7 +30,10 @@ var ppid;
 
 var song = new Audio();
 song.src=localStorage.getItem('playSong');
+console.log(localStorage.getItem('playSong'))
+console.log(song.src)
 latestReleasesIndex = latestReleasesArr.indexOf(song.getAttribute("src"));
+console.log(song.getAttribute("src"))
 console.log(song);
 console.log(latestReleasesIndex);
 
@@ -62,6 +66,7 @@ function change(){
 	song.src = latestReleasesArr[latestReleasesIndex];
 	console.log(song.src);
 	imgSrc = latestReleasesImageArr[latestReleasesIndex];
+	console.log(imgSrc)
 	bg.style.backgroundImage = 'url(' + imgSrc + ')';
 	mainImage.src=imgSrc;
 	if(ppid != null){

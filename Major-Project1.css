@@ -407,22 +407,22 @@ span{
 }
 
 #music-1{
-	background-image: url(music-stations-1.jpg);
+	background-image: url(./assets/images/music-stations-1.jpg);
 }
 #music-2{
-	background-image: url(music-stations-2.jpeg);
+	background-image: url(./assets/images/music-stations-2.jpeg);
 }
 #music-3{
-	background-image: url(music-stations-3.jpg);
+	background-image: url(./assets/images/music-stations-3.jpg);
 }
 #music-4{
-	background-image: url(music-stations-4.jpg);
+	background-image: url(./assets/images/music-stations-4.jpg);
 }
 #music-5{
-	background-image: url(music-stations-5.jpg);
+	background-image: url(./assets/images/music-stations-5.jpg);
 }
 #music-6{
-	background-image: url(music-stations-6.jpg);
+	background-image: url(./assets/images/music-stations-6.jpg);
 }
 
 @media screen and (max-width: 1200px){
@@ -475,15 +475,15 @@ span{
 }
 
 #music-7{
-	background-image: url(music-stations-party.jpg);
+	background-image: url(./assets/images/music-stations-party.jpg);
 }
 
 #music-8{
-	background-image: url(music-stations-dj.jpg);
+	background-image: url(./assets/images/music-stations-dj.jpg);
 }
 
 #music-9{
-	background-image: url(music-stations-road.jpg);
+	background-image: url(./assets/images/music-stations-road.jpg);
 }
 
 
